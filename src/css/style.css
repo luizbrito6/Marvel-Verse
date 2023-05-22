@@ -1,0 +1,86 @@
+/* FONTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Bebas+Neue&family=Staatliches&family=Teko&display=swap');
+
+/* FIM FONTES */
+
+
+/* CLASSES REUTILIZAVÉIS */
+
+.main{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.centralizado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.titulo{
+    font-size: 36rem;
+}
+
+
+.links{
+    font-size: 18rem;
+    font-family: 'Arimo', sans-serif;
+}
+
+/* FIM CLASSES REUTILIZAVÉIS */
+
+/* HEADER  */
+
+.header-section{
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+}
+
+
+.header-section header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.header-section header nav ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.header-section header nav ul li::after{
+    content: '';
+    display: block;
+    padding: 5em;
+    margin: 2rem 5rem;
+    width: 0;
+    height: 2rem;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.header-section header nav ul li:hover::after{
+    background-color: var(--red-color);
+    width: 50rem;
+}
+
+
+.header-section header img{
+    width: 50px;
+  
+}
+
+
+
+
+
+
+

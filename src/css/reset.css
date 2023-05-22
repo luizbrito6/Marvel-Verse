@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body, html{
+    font-size: 6.25%;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Staatliches';
+}
+
+h1, h2, h3, h4, h5, h6, a, p{
+    color: #fff;
+}
+
+
+
+/* VARIÁVEIS */
+
+:root{
+    --red-color: #EB3737;
+}
