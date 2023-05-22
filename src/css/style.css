@@ -63,7 +63,7 @@
 
 .header-section header{
     display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 'Logo' 'NavBar' 'Icon';
     justify-content: space-around ;
     align-items: center;
@@ -149,6 +149,12 @@
     font-size: 60rem;
 }
 
+.hero-section .box-hero  p{
+    font-size: 18rem;
+    font-family: 'Arimo';
+    margin: 20rem 0;
+    font-weight: 700;
+}
 
 .hero-section .box-hero .btn-hero{
     font-size: 24px;

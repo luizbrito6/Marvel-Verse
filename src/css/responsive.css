@@ -19,6 +19,19 @@
 
     .header-section header nav{
         display: none;
+        position: absolute;
+        background-color: #000;
+        margin-top: 200px;
+        right: 0;
+        justify-content: center;
+        padding: 10rem 50rem;
+
+
+        
+    }
+
+    .header-section header nav ul{
+        flex-direction: column;
     }
 
     .header-section header{

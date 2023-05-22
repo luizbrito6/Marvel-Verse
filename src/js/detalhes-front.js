@@ -17,3 +17,16 @@ function escondeHeader(){
       header.style.backgroundColor= "transparent"
     }
 }
+
+
+// FUNÇÃO HAMBURGUER
+
+const nav = document.querySelector("nav");
+
+
+function abreMenu() {
+  nav.style.display = 'flex' 
+
+  
+}
+
