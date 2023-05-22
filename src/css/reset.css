@@ -7,6 +7,7 @@
 
 body, html{
     font-size: 6.25%;
+    scroll-behavior: smooth;
 }
 
 
@@ -23,8 +24,23 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Staatliches';
 }
 
-h1, h2, h3, h4, h5, h6, a, p{
+h1, h2, h3, h4, h5, h6, a, p, button{
     color: #fff;
+}
+
+h2{
+    font-size: 36rem;
+}
+
+h2::after{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 75rem;
+    height: 3rem;
+    border-radius: 10rem;
+    background: var(--red-color);
+
 }
 
 

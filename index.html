@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MarvelVerse</title>
+
+    <link rel="shortcut icon" href="src/img/icon-page.png" type="image/x-icon">
 
 
     <link rel="stylesheet" href="src/css/reset.css">
@@ -13,25 +16,56 @@
     <link rel="stylesheet" href="src/css/style.css">
 
 
+
+
 </head>
 
 
-<body>
+<body onscroll="escondeHeader()">
     <section class="header-section" id="header-section-id">
         <header class="main">
-            <h1><a href="#header-section-id" class="titulo">MARVEL VERSE</a></h1>
-
+            <h1><a href="#hero-section-id" class="titulo">MARVEL VERSE</a></h1>
             <nav>
                 <ul>
-                    <li><a href="" class="links">Quadrinhos</a></li>
+                    <li><a href="#quadrinhos-section-id" class="links">Quadrinhos</a></li>
                     <li><a href="" class="links">Personagens</a></li>
-                    <li><a href=""class="links">Criadores</a></li>
+                    <li><a href="" class="links">Criadores</a></li>
                 </ul>
             </nav>
-
             <img src="src/img/shield-logo.png" alt="Logo shield">
-
         </header>
+    </section>
+
+
+    <section class="hero-section" id="hero-section-id">
+        <main class="main box-hero centralizado">
+            <h1 class="titulo-principal">CONFIRA INFORMAÇÕES SOBRE O UNIVERSO DA MARVEL</h1>
+            <a href="#quadrinhos-section-id" class="btn-hero">INICIAR NOSSA JORNADA</a>
+        </main>
+    </section>
+
+    <section class="quadrinhos-section" id="quadrinhos-section-id">
+        
+        <main class="main box-quadrinhos centralizado">
+            
+            <h2>Quadrinhos</h2>
+
+            <div class="box-cards">
+
+
+                <div class="card">
+                    <img src="src/img/card-teste.png" alt="">
+
+                    <div class="info-hover">
+                        <h3>Lorem</h3>
+                        <button>Detalhes</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+
     </section>
 
 
@@ -61,7 +95,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/spark-md5/3.0.2/spark-md5.min.js"></script>
     <!-- Biblioteca SPARK MD5 -->
 
-
+    <!--MEUS SCRIPTS  -->
     <script src="src/js/script.js"></script>
+    <script src="src/js/detalhes-front.js"></script>
+
+
+
 </body>
+
 </html>
