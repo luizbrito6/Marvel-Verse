@@ -1,0 +1,32 @@
+.menu{
+    display: none;
+    width: 100px;
+    gap: 3px;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu span{
+    width: 30px;
+    height: 5px;
+    background-color: var(--red-color);
+}
+
+@media (max-width: 900px) {
+    .menu{
+        display: flex;
+    }
+
+    .header-section header nav{
+        display: none;
+    }
+
+    .header-section header{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-section .box-hero h1{
+        width: 100%;
+    }
+  
+}

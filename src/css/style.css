@@ -5,7 +5,7 @@
 /* FIM FONTES */
 
 
-
+/* CLASSES REUTILIZAVÉIS */
 
 .main{
     max-width: 1200px;
@@ -47,6 +47,10 @@
 }
 /* FIM CLASSES REUTILIZAVÉIS */
 
+
+
+
+
 /* HEADER  */
 
 .header-section{
@@ -54,20 +58,40 @@
     width: 100%;
     margin-bottom: 80rem;
     transition: all 0.5s ease-in-out;
+
+}
+
+.header-section header{
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'Logo' 'NavBar' 'Icon';
+    justify-content: space-around ;
+    align-items: center;
+    padding: 20rem;
+}
+
+.header-section header h1{
+    grid-area: 'Logo';
 }
 
 
-.header-section header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
+.header-section header nav{
+    grid-area: 'NavBar'; 
 }
 
 
 .header-section header nav ul{
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    gap: 15rem;
+}
+
+
+.header-section header .img-header{
+    grid-area: 'Icon';
+    display: flex;
+    justify-content: end;
+    
 }
 
 
@@ -107,10 +131,10 @@
 
 .hero-section{
     height: 100vh;
-    background-image: url('../img/FundoHero.svg');
+    background-image: url('../img/FundoHero.png');
     background-size: cover;
     background-position: center center;
-}
+}   
 
 
 .hero-section .box-hero{
@@ -179,11 +203,6 @@
     background-image: url('../img/card-teste.png');
     background-position: center center;
     background-size: cover;
-}
-
-
-.box-quadrinhos .box-cards{
-    
 }
 
 

@@ -9,7 +9,7 @@ function escondeHeader(){
 
     console.log(scroll);
   
-    if(scroll > 100){
+    if(scroll > 1){
       header.style.backgroundColor= "#000"
 
 
