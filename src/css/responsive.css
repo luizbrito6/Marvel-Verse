@@ -12,6 +12,15 @@
     background-color: var(--red-color);
 }
 
+
+
+@media (min-width: 901px) {
+    .header-section header{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
 @media (max-width: 900px) {
     .menu{
         display: flex;
@@ -19,6 +28,7 @@
 
 
     .header-section header nav{
+        display: none;
         position: absolute;
         background-color: #353535;
         right: 0;
@@ -50,6 +60,10 @@
 
     .hero-section .box-hero h1{
         width: 100%;
+    }
+
+    .quadrinhos-section{
+        height: auto;
     }
   
 }

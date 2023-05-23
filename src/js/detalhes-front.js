@@ -20,11 +20,14 @@ function escondeHeader(){
 // FUNÇÃO HAMBURGUER
 
 const menu = document.querySelector(".menu");
+
 var menuAberto = false; 
 
 menu.addEventListener('click', () => {
   
   const nav = document.querySelector("nav");
+
+
   if(menuAberto) {
     nav.style.display ='none';
     menuAberto = false;
