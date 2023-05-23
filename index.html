@@ -24,7 +24,7 @@
 </head>
 
 
-<body onscroll="escondeHeader()">
+<body onscroll="escondeHeader()" >
     <section class="header-section" id="header-section-id">
         <header class="main">
 
@@ -32,18 +32,23 @@
               
             <h1><a href="#hero-section-id" class="titulo">MARVEL VERSE</a></h1>
 
-            <nav>
+            <nav class="centralizado">
                 <ul>
                     <li><a href="#quadrinhos-section-id" class="links">Quadrinhos</a></li>
-                    <li><a href="" class="links">Personagens</a></li>
+                    <li><a href="#personagens-section-id" class="links">Personagens</a></li>
                     <li><a href="" class="links">Criadores</a></li>
                 </ul>
+
+
+                <div class="gif-menu centralizado">
+                    <img src="src/img/gif-menu.gif" alt="gif vingadores">
+                </div>
             </nav>
             
             <div class="img-header">
                 <img src="src/img/shield-logo.png" alt="Logo shield">
 
-                <div class="menu centralizado" onclick="abreMenu()">
+                <div class="menu centralizado">
                     <span></span>
                     <span></span>
                     <span></span>  
@@ -69,7 +74,7 @@
 
             <h2>Quadrinhos</h2>
 
-            <div class="box-cards">
+            <div class="box-cards centralizado">
 
 
                 <div class="card">
@@ -84,7 +89,7 @@
 
                     </div>
                 </div>
-                
+
                 <div class="card">
 
 
@@ -115,6 +120,22 @@
             </div>
         </main>
 
+    </section>
+
+
+    <section class="personagens-section" id="personagens-section-id">
+
+        <div class="fundo-video">
+            <video autoplay muted loop src="src/video/video-fundo-personagens.mp4"></video>
+        </div>
+
+        <main class="main box-personagens centralizado">
+            <h2>Personagens</h2>
+
+            <img src="src/img/personagens-main.svg" alt="">
+
+            <a class="btn-hero" href="">PESQUISAR</a>
+        </main>
     </section>
 
 

@@ -58,6 +58,7 @@
     width: 100%;
     margin-bottom: 80rem;
     transition: all 0.5s ease-in-out;
+    z-index: 5;
 
 }
 
@@ -124,6 +125,22 @@
   transform: rotate(360deg);
 }
 
+
+.header-section header nav .gif-menu{
+    display: none;
+    background-color: aqua;
+    width: 90rem;
+    height: 90rem;
+    border-radius: 50%;
+    background-color: #B9171B;
+    
+}
+
+.header-section header nav .gif-menu img{
+    width: 40rem;
+}
+
+
 /* FIM HEADER  */
 
 
@@ -156,7 +173,7 @@
     font-weight: 700;
 }
 
-.hero-section .box-hero .btn-hero{
+.btn-hero{
     font-size: 24px;
     font-family: 'Teko';
     background: var(--red-color);
@@ -167,8 +184,7 @@
     transition: all 0.5s;
 }
 
-
-.hero-section .box-hero .btn-hero:hover{
+ .btn-hero:hover{
     background-color: #000;
 }
 
@@ -192,6 +208,10 @@
 }
 
 
+.quadrinhos-section .box-quadrinhos .box-cards{
+    gap: 30rem;
+}
+
 .quadrinhos-section .box-quadrinhos .card{
     width: 230rem;
     height: 350rem;
@@ -199,6 +219,7 @@
     border-radius: 10rem;
     padding: 15rem;
     cursor: pointer;
+
 }
 
 
@@ -254,13 +275,47 @@
 }
 
 
+/* FIM QUADRINHOS */
+
+.personagens-section{
+    height: 100vh;
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.personagens-section .fundo-video video{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
 
 
+.fundo-video::after{
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(190deg, rgba(0,0,0,0.2637429971988795) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6082808123249299) 50%, rgba(0,0,0,1) 100%);
+    z-index: 2;
+}
 
-
-
-
-
-
+.personagens-section .box-personagens{
+    padding: 150rem 0 0 0 ;
+    position: absolute;
+    z-index: 3;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 30rem;
+ 
+}
 
 

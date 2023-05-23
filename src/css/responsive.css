@@ -17,17 +17,27 @@
         display: flex;
     }
 
+
     .header-section header nav{
-        display: none;
         position: absolute;
-        background-color: #000;
-        margin-top: 200px;
+        background-color: #353535;
         right: 0;
-        justify-content: center;
-        padding: 10rem 50rem;
+        top: 70px;
+        height: 300rem;
+        padding: 0 80rem;
+        text-align: center;
+        border-radius: 10rem;
+        flex-direction: column;
+        gap: 50rem;
 
+    }
 
-        
+    .header-section header nav .gif-menu{
+        display: flex;
+    }
+
+    .header-section header nav ul li::after{
+        margin: 0 auto;
     }
 
     .header-section header nav ul{

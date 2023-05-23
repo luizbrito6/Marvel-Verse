@@ -1,8 +1,6 @@
 // FUNÇÃO PARA MUDAR A COR DO HEADER ATRAVÉS DO SCROLL
  
 const header = document.querySelector('#header-section-id');
-
-
 let scroll = 0;
 function escondeHeader(){
     scroll = window.pageYOffset;
@@ -21,12 +19,23 @@ function escondeHeader(){
 
 // FUNÇÃO HAMBURGUER
 
-const nav = document.querySelector("nav");
+const menu = document.querySelector(".menu");
+var menuAberto = false; 
 
-
-function abreMenu() {
-  nav.style.display = 'flex' 
-
+menu.addEventListener('click', () => {
   
-}
+  const nav = document.querySelector("nav");
+  if(menuAberto) {
+    nav.style.display ='none';
+    menuAberto = false;
+  } else {
+    nav.style.display = 'flex';
+    menuAberto = true;
+
+    
+  }
+
+})
+
+
 
