@@ -62,8 +62,11 @@
         width: 100%;
     }
 
-    .quadrinhos-section{
+    .quadrinhos-section,
+    .criadores-section{
         height: auto;
     }
+
+    
   
 }

@@ -8,6 +8,7 @@
 body, html{
     font-size: 6.25%;
     scroll-behavior: smooth;
+    cursor: url('../img/cursor.png'), auto;
 }
 
 

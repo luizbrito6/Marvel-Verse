@@ -194,7 +194,7 @@
 /* QUADRINHOS */
 .quadrinhos-section {
     height: 100vh;
-    background-color: #000000;
+    background-color: #242424;
  
     padding: 50rem;
 
@@ -279,9 +279,11 @@
 
 /* FIM QUADRINHOS */
 
+
+/* PERSONAGENS */
+
 .personagens-section {
     height: 100vh;
-    background-color: #000;
     position: relative;
     overflow: hidden;
     background-image: url(../img/fundo-pesonagens.png);
@@ -290,25 +292,7 @@
 
 }
 
-.personagens-section .fundo-video video {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    bottom: 0;
-    z-index: 1;
-}
 
-
-.fundo-video::after {
-    content: "";
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: radial-gradient(#000, rgba(0, 0, 0, 0.6), #000);
-    z-index: 2;
-}
 
 .personagens-section .box-personagens {
     padding: 150rem 0 0 0;
@@ -322,3 +306,118 @@
     gap: 30rem;
 
 }
+
+
+.personagens-section .box-personagens img{
+    width: 250rem;
+}
+
+/* FIM PERSONAGENS */
+
+
+/* CRIADORES */
+.criadores-section{ 
+    height: 100vh;
+    background-color: #212121;
+    padding: 150rem 0 50rem 0;
+}
+
+
+.criadores-section .box-criadores{
+    flex-flow: column wrap;
+
+}
+
+
+.criadores-section .box-criadores img{
+    width: 500rem;
+}
+
+.criadores-section .box-criadores .conteudo-criadores{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100rem;
+    margin-top: 30rem;
+}
+
+
+#arrow-left{
+    transform: rotate(180deg);
+}
+
+#arrow-right, #arrow-left{
+    width: 50rem;
+    height: 50rem;
+    cursor: pointer;
+}
+
+
+.card-mais-btn{
+    display: flex;
+    gap: 20rem;
+    align-items: center;
+    height: 100%;
+}
+.box-criadores .conteudo-criadores .card-criador{
+    width: 350rem;
+    height: 400rem;
+    background-color: #fff;
+    border-radius: 10rem;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+
+.conteudo-criadores .card-criador span{
+    width: 100%;
+    height: 120rem;
+    background-color: var(--red-color);
+    position: absolute;
+    top: 0;
+    border-radius: 10rem 10rem 0 0 ;
+    z-index: 1;
+}
+
+.conteudo-criadores .card-criador .box-img{
+    background-color: #000;
+    width: 150rem;
+    height: 150rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    margin-top: 60rem;
+}
+
+
+.conteudo-criadores .card-criador .info-criador{
+    margin-top: 150rem;
+    font-family: 'teko';
+    font-size: 24rem;
+    
+}
+
+
+.card-criador .info-criador h3, 
+.card-criador .info-criador a{
+    color: #000;
+    margin: 25rem;
+} 
+
+
+.card-criador .info-criador a{
+    border: 3rem solid #000;
+    padding: 5rem 10rem;
+    font-weight: 700;
+    transition: all 0.5s ;
+
+}
+
+.card-criador .info-criador a:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+/* FIM CRIADORES  */
