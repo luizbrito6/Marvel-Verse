@@ -42,3 +42,26 @@ menu.addEventListener('click', () => {
 
 
 
+
+// MODAL
+
+const modal = document.querySelector('.modal');
+const abreModal = document.querySelector('#primeiro');
+const fechaModal = document.querySelector('i');
+
+
+
+
+abreModal.addEventListener('click', () => {
+
+  modal.style.display = 'flex'
+})
+
+fechaModal.addEventListener('click', () => {
+  modal.style.display = 'none';
+
+
+})
+
+
+

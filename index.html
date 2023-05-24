@@ -10,6 +10,10 @@
     <link rel="shortcut icon" href="src/img/icon-page.png" type="image/x-icon">
 
 
+
+
+
+
     <link rel="stylesheet" href="src/css/reset.css">
 
 
@@ -17,6 +21,10 @@
 
 
     <link rel="stylesheet" href="src/css/responsive.css">
+
+
+
+    <link rel="stylesheet" href="src/css/modal.css">
 
 
 
@@ -70,6 +78,51 @@
 
     <section class="quadrinhos-section" id="quadrinhos-section-id">
 
+        <!--    MODAL HEADER  -->
+        <div class="modal">
+            <img src="src/img/card-teste.png" alt="imagem do quadrinho">
+
+
+            <div class="fecha-modal">
+                <span><i class="bi bi-x-circle"></i></span>
+            </div>
+
+
+            <div class="conteudo-modal">
+
+                <h3>Titulo</h3>
+
+                <div class="data">
+                    <label for="">Data de publicação</label>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+
+                </div>
+
+                <div class="criador">
+                    <label for="">Criador</label>
+                    <p>Lorem ipsum</p>
+                </div>
+
+                <div class="desenhista">
+                    <label for="">Desenhista</label>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="artista">
+                    <label for="">Artista da capa</label>
+                    <p>Lorem</p>
+                </div>
+
+
+
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est nemo reprehenderit porro
+                    et suscipit nesciunt pariatur aperiam aliquid maxime aspernatur. Rerum numquam sint nulla est
+                    deleniti error harum amet reprehenderit.</p>
+            </div>
+        </div>
+
+
+
         <main class="main box-quadrinhos centralizado">
 
             <h2>Quadrinhos</h2>
@@ -84,7 +137,7 @@
 
                         <div class="info-hover centralizado">
                             <h3>Danny Ketch: Ghost Rider (2023) #1</h3>
-                            <a class="btn">Detalhes</a>
+                            <a class="btn" id="primeiro">Detalhes</a>
                         </div>
 
                     </div>
@@ -205,10 +258,10 @@
 
 
 
-
     <!-- Biblioteca SPARK MD5 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/spark-md5/3.0.2/spark-md5.min.js"></script>
     <!-- Biblioteca SPARK MD5 -->
+
 
     <!--MEUS SCRIPTS  -->
     <script src="src/js/script.js"></script>

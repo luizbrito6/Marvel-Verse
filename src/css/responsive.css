@@ -21,6 +21,16 @@
 }
 
 
+@media (max-width: 1350px) {
+    .criadores-section .box-criadores img{
+        width: 350rem;
+    }
+
+    .box-criadores .conteudo-criadores .card-criador{
+        width: 300rem;
+    }
+}
+
 @media (max-width: 900px) {
     .menu{
         display: flex;
@@ -67,6 +77,17 @@
         height: auto;
     }
 
+    .modal{
+        justify-content: center;
+    }
+
+    .modal .desc{
+        width: auto;
+    }
     
+    .box-criadores .conteudo-criadores .card-criador{
+        width: 250rem;
+    }
   
 }
+
