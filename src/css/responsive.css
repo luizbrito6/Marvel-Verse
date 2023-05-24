@@ -88,6 +88,21 @@
     .box-criadores .conteudo-criadores .card-criador{
         width: 230rem;
     }
+
+    .card-mais-btn{
+        gap: 5rem;
+    }
+
+    .footer-section{
+        height: auto;
+        padding: 20rem;
+    }
+
+    footer{
+        gap: 30rem;
+    }
+
+ 
   
 }
 

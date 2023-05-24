@@ -5,7 +5,7 @@
     background-color: #EB3737;
     display: none;
     position: absolute;
-    z-index: 9;
+    z-index: 5;
     width: 70%;
     padding: 50rem;
     align-items: center;
@@ -23,12 +23,16 @@
 
 
 @keyframes modal-animation {
-    from {
+    0% {
         opacity: 0;
 
     }
 
-    to {
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
         opacity: 1;
     }
 }
@@ -78,4 +82,11 @@
 
 .fecha-modal i:hover {
     color: #fff;
+}
+
+
+@media (max-width: 900px) {
+    .modal{
+        width: 95%;
+    }
 }

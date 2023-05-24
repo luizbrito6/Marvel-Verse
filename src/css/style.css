@@ -59,7 +59,7 @@
     width: 100%;
     margin-bottom: 80rem;
     transition: all 0.5s ease-in-out;
-    z-index: 5;
+    z-index: 10;
 
 }
 
@@ -196,7 +196,7 @@
     height: 100vh;
     background-color: #242424;
     position: relative;
-    padding: 50rem;
+    padding: 150rem 0 50rem 0;
 
 }
 
@@ -309,7 +309,7 @@
 
 
 .personagens-section .box-personagens img{
-    width: 250rem;
+    width: 200rem;
 }
 
 /* FIM PERSONAGENS */
@@ -361,13 +361,14 @@
     height: 100%;
 }
 .box-criadores .conteudo-criadores .card-criador{
-    width: 350rem;
-    height: 400rem;
+    width: 300rem;
+    height: 350rem;
     background-color: #fff;
     border-radius: 10rem;
     flex-direction: column;
     justify-content: space-around;
     position: relative;
+    
 }
 
 .conteudo-criadores .card-criador span{
@@ -438,6 +439,8 @@ footer{
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+
 footer p{
     font-size: 16rem;
     font-family: 'arimo';
@@ -449,4 +452,5 @@ footer p{
    font-size: 30rem;
     color: #fff;
     margin: 5rem;
+
 }
