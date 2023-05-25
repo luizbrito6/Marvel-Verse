@@ -636,8 +636,8 @@ footer p{
 
 
 .img-api-personagem{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     background-color: #000;
     border: 3px solid #fff;
@@ -663,6 +663,9 @@ footer p{
     border-radius: 10rem;
     flex-direction: column;
     gap: 50rem;
+    display: none;
+    background-position: center center;
+    background-size:cover ;
 }
 
 .img-modal-final{
@@ -788,3 +791,5 @@ footer p{
 }
 
 /* FIM RESPONSIVIDADE */
+
+
