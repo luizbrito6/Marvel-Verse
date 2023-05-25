@@ -656,7 +656,6 @@ footer p{
 .modal-final{
     width: 50vw;
     height: 70vh;
-    background-color: #212121;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -664,9 +663,6 @@ footer p{
     border-radius: 10rem;
     flex-direction: column;
     gap: 50rem;
-    display: 'none';
-
-
 }
 
 .img-modal-final{

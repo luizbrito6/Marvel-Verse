@@ -162,3 +162,24 @@ document.querySelector('.btn-modal-final').addEventListener('click', () => {
 
 })
 
+
+
+const apiKey = 'JdJ7biuLrQZUbAcSvPdeHsXtM0JRlEc4Vx4CNwrOqXDAwMcy0W4r8ANz';
+const searchQuery = 'marvel'; // Palavra-chave para buscar fotos
+
+fetch(`https://api.pexels.com/v1/search?query=${searchQuery}`, {
+  headers: {
+    Authorization: apiKey
+  }
+})
+  .then(response => response.json())
+  .then(data => {
+    // Processar e exibir os resultados
+    const specificImage = data.photos[0];
+
+    document.querySelector('.modal-final').style.backgroundImage = `url(${specificImage.url})`;
+
+  })
+  .catch(error => {
+    console.error('Erro:', error);
+  });
