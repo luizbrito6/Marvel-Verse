@@ -8,29 +8,8 @@
     <title>MarvelVerse</title>
 
     <link rel="shortcut icon" href="src/img/icon-page.png" type="image/x-icon">
-
-
-
-
-
-
-    <link rel="stylesheet" href="src/css/reset.css">
-
-
     <link rel="stylesheet" href="src/css/style.css">
-
-
-    <link rel="stylesheet" href="src/css/responsive.css">
-
-
-
-    <link rel="stylesheet" href="src/css/modal.css">
-
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-
-
 
 </head>
 
@@ -58,7 +37,7 @@
             </nav>
 
             <div class="img-header">
-                <img src="src/img/shield-logo.png" alt="Logo shield">
+                <img src="src/img/shield-logo.png" alt="Logo shield" id="shield">
 
                 <div class="menu centralizado">
                     <span></span>
@@ -244,28 +223,18 @@
 
     <section class="criadores-section" id="criadores-section-id">
 
-        <div class=" modal">
-          
-
-
-            <div class="fecha-modal">
-                <span><i class="bi bi-x-circle fecha-1"></i></span>
-            </div>
-
-
-            <div class="conteudo-modal">
-
-                
-
-            </div>
-        </div>
+        
+        
         <main class="main box-criadores centralizado">
-
+            
+            
             <h2>Criadores</h2>
-
-
-
+            
+            
+            
             <div class="conteudo-criadores">
+
+
 
                 <img src="src/img/doctor.svg" alt="">
 
@@ -276,15 +245,13 @@
                         <span></span>
 
                         <div class="box-img">
-                            <img src="" alt="">
                         </div>
 
 
                         <div class="info-criador">
 
-                            <h3>TESTE</h3>
+                            <h3 id="nome-criador"></h3>
 
-                            <a href="">DETALHES</a>
                         </div>
 
                     </div>
@@ -315,7 +282,15 @@
 
 
 
+    <div class="modal-final centralizado">
+        <div class="fecha-modal fecha-modal-final">
+            <span><i class="bi bi-x-circle fecha-1"></i></span>
+        </div>
 
+        <div class="img-modal-final"></div>
+
+        <a class="btn btn-modal-final"> GERAR IMAGEM ALEATÓRIA</a>
+    </div>
 
 
 

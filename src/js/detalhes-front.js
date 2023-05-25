@@ -41,7 +41,7 @@ menu.addEventListener('click', () => {
 
 
 
-// MODAL
+// MODAL QUADRINHO
 
 
 
@@ -49,9 +49,6 @@ for (i = 1; i <= 4; i++){
 
   const modal = document.querySelector(`.modal-${i}`);
   const abreModal = document.querySelector(`.abre-modal-${i}`);
-  
-  
-  console.log(abreModal);
   const fechaModal = document.querySelector(`.fecha-${i}`);
   
   abreModal.addEventListener('click', () => {
@@ -62,12 +59,25 @@ for (i = 1; i <= 4; i++){
   fechaModal.addEventListener('click', () => {
     modal.style.display = 'none';
 
-    
-  
-  
   })
   
 } 
+
+
+
+const modalFinal = document.querySelector('.modal-final');
+const abreModalFinal = document.querySelector('#shield');
+const fechaModalFinal = document.querySelector('.fecha-modal-final');
+
+abreModalFinal.addEventListener('click', () => {
+
+  modalFinal.style.display = 'flex';
+})
+
+fechaModalFinal.addEventListener('click', () => {
+  modalFinal.style.display = 'none';
+
+})
 
 
 
