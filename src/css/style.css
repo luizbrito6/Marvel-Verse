@@ -2,7 +2,67 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Bebas+Neue&family=Staatliches&family=Teko&display=swap');
 
+
 /* FIM FONTES */
+
+
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body, html{
+    font-size: 6.25%;
+    scroll-behavior: smooth;
+    cursor: url('../img/cursor.png'), auto;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Staatliches';
+}
+
+h1, h2, h3, h4, h5, h6, a, p, button{
+    color: #fff;
+}
+
+h2{
+    font-size: 36rem;
+}
+
+h2::after{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 75rem;
+    height: 3rem;
+    border-radius: 10rem;
+    background: var(--red-color);
+
+}
+
+/* FIM RESET */
+
+
+
+/* VARIÁVEIS */
+
+:root{
+    --red-color: #EB3737;
+}
+/* FIM RESET */
 
 
 /* CLASSES REUTILIZAVÉIS */
@@ -191,6 +251,9 @@
 
 /* FIM HERO */
 
+
+
+
 /* QUADRINHOS */
 .quadrinhos-section {
     height: 100vh;
@@ -229,7 +292,6 @@
     width: 100%;
     height: 100%;
     border-radius: 10rem;
-    background-image: url('../img/card-teste.png');
     background-position: center center;
     background-size: cover;
 }
@@ -245,7 +307,6 @@
     transition: all 0.5s ease-in-out;
     opacity: 0;
     border-radius: 10rem;
-    background-image: url('../img/card-teste.png');
     background-position: center center;
     background-size: cover;
     background-blend-mode: luminosity;
@@ -265,8 +326,9 @@
     word-break: break-all;
     font-weight: 700;
     border-radius: 5rem;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 1);
     padding: 10rem;
+    text-transform: uppercase;
 
 }
 
@@ -454,3 +516,230 @@ footer p{
     margin: 5rem;
 
 }
+
+/* FIM FOOTER */
+
+
+/* MODAL  QUADRINHOS*/
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+
+.modal {
+    background-color: #EB3737;
+    display: none;
+    position: absolute;
+    z-index: 5;
+    width: 70%;
+    padding: 50rem;
+    align-items: center;
+    gap: 30rem;
+    border-radius: 10rem;
+    flex-wrap: wrap;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+
+    animation-name: modal-animation;
+    animation-duration: 0.3s;
+}
+
+
+@keyframes modal-animation {
+    0% {
+        opacity: 0;
+
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.desc {
+    width: 500rem;
+}
+
+
+
+
+.conteudo-modal h3 {
+    font-size: 24rem;
+
+}
+
+
+
+.conteudo-modal p {
+    font-size: 18rem;
+    font-family: 'Staatliches';
+    color: #000;
+}
+
+
+.fecha-modal {
+    position: absolute;
+    right: 0;
+    margin-right: 10rem;
+    margin-top: 10rem;
+    top: 0;
+}
+
+
+.fecha-modal i {
+    font-size: 40rem;
+    font-weight: 700;
+    color: #000;
+    transition: all .5s;
+}
+
+.fecha-modal i:hover {
+    color: #fff;
+}
+
+
+@media (max-width: 900px) {
+    .modal{
+        width: 95%;
+    }
+}
+
+/* FIM MODAL PERSONAGENS */
+
+/* RESPONSIVIDADE */
+
+.menu{
+    display: none;
+    width: 100px;
+    gap: 3px;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu span{
+    width: 30px;
+    height: 5px;
+    background-color: var(--red-color);
+}
+
+
+
+@media (min-width: 901px) {
+    .header-section header{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 1350px) {
+    .criadores-section .box-criadores img{
+        width: 350rem;
+    }
+
+    .box-criadores .conteudo-criadores .card-criador{
+        width: 300rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .menu{
+        display: flex;
+    }
+
+
+    .header-section header nav{
+        display: none;
+        position: absolute;
+        background-color: #353535;
+        right: 0;
+        top: 70px;
+        height: 300rem;
+        padding: 0 80rem;
+        text-align: center;
+        border-radius: 10rem;
+        flex-direction: column;
+        gap: 50rem;
+
+    }
+
+    .header-section header nav .gif-menu{
+        display: flex;
+    }
+
+    .header-section header nav ul li::after{
+        margin: 0 auto;
+    }
+
+    .header-section header nav ul{
+        flex-direction: column;
+    }
+
+    .header-section header{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-section .box-hero h1{
+        width: 100%;
+    }
+
+    .quadrinhos-section,
+    .criadores-section{
+        height: auto;
+    }
+
+    .modal{
+        justify-content: center;
+    }
+
+    .modal .desc{
+        width: auto;
+    }
+    
+    .box-criadores .conteudo-criadores .card-criador{
+        width: 230rem;
+    }
+
+    .card-mais-btn{
+        gap: 5rem;
+    }
+
+    .footer-section{
+        height: auto;
+        padding: 20rem;
+    }
+
+    footer{
+        gap: 30rem;
+    }
+  
+}
+
+/* FIM RESPONSIVIDADE */
+
+
+/* DADOS API */
+
+
+.img-api-personagem{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #000;
+    border: 3px solid #fff;
+    display: none;
+    background-size: center center;
+    background-size: cover;
+
+}
+
+.modal img{
+    width: 200rem;
+    border-radius: 10rem;
+}
+
+

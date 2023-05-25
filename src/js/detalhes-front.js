@@ -4,8 +4,6 @@ const header = document.querySelector('#header-section-id');
 let scroll = 0;
 function escondeHeader(){
     scroll = window.pageYOffset;
-
-    console.log(scroll);
   
     if(scroll > 1){
       header.style.backgroundColor= "#000"
@@ -45,23 +43,31 @@ menu.addEventListener('click', () => {
 
 // MODAL
 
-const modal = document.querySelector('.modal');
-const abreModal = document.querySelector('#primeiro');
-const fechaModal = document.querySelector('i');
 
 
+for (i = 1; i <= 4; i++){
 
+  const modal = document.querySelector(`.modal-${i}`);
+  const abreModal = document.querySelector(`.abre-modal-${i}`);
+  
+  
+  console.log(abreModal);
+  const fechaModal = document.querySelector(`.fecha-${i}`);
+  
+  abreModal.addEventListener('click', () => {
+  
+    modal.style.display = 'flex'
+  })
+  
+  fechaModal.addEventListener('click', () => {
+    modal.style.display = 'none';
 
-abreModal.addEventListener('click', () => {
-
-  modal.style.display = 'flex'
-})
-
-fechaModal.addEventListener('click', () => {
-  modal.style.display = 'none';
-
-
-})
+    
+  
+  
+  })
+  
+} 
 
 
 

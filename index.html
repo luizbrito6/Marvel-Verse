@@ -36,6 +36,7 @@
 
 
 <body onscroll="escondeHeader()">
+
     <section class="header-section" id="header-section-id">
         <header class="main">
 
@@ -82,48 +83,81 @@
     <section class="quadrinhos-section" id="quadrinhos-section-id">
 
         <!--    MODAL HEADER  -->
-        <div class="modal">
-            <img src="src/img/card-teste.png" alt="imagem do quadrinho">
+
+        
+        <div class=" modal modal-1">
+            <img src="" alt="imagem do quadrinho" class="modal-img-1">
 
 
             <div class="fecha-modal">
-                <span><i class="bi bi-x-circle"></i></span>
+                <span><i class="bi bi-x-circle fecha-1"></i></span>
             </div>
 
 
             <div class="conteudo-modal">
 
-                <h3>Titulo</h3>
+                <h3 class="titulo-modal-1"></h3>
 
-                <div class="data">
-                    <label for="">Data de publicação</label>
-                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                <p class="desc desc-1"></p>
 
-                </div>
-
-                <div class="criador">
-                    <label for="">Criador</label>
-                    <p>Lorem ipsum</p>
-                </div>
-
-                <div class="desenhista">
-                    <label for="">Desenhista</label>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-
-                <div class="artista">
-                    <label for="">Artista da capa</label>
-                    <p>Lorem</p>
-                </div>
-
-
-
-                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est nemo reprehenderit porro
-                    et suscipit nesciunt pariatur aperiam aliquid maxime aspernatur. Rerum numquam sint nulla est
-                    deleniti error harum amet reprehenderit.</p>
             </div>
         </div>
 
+        <div class="modal modal-2">
+            <img src="" alt="imagem do quadrinho" class="modal-img-2">
+
+
+            <div class="fecha-modal">
+                <span><i class="bi bi-x-circle fecha-2"></i></span>
+            </div>
+
+
+            <div class="conteudo-modal">
+
+                <h3  class="titulo-modal-2">Titulo</h3>
+
+
+                <p class="desc desc-2"></p>
+            </div>
+        </div>
+
+        <div class="modal modal-3">
+            <img src="" alt="imagem do quadrinho" class="modal-img-3">
+
+
+            <div class="fecha-modal">
+                <span><i class="bi bi-x-circle fecha-3"></i></span>
+            </div>
+
+
+            <div class="conteudo-modal">
+
+                <h3  class="titulo-modal-3"></h3>
+    
+                <p class="desc desc-3"></p>
+            </div>
+        </div>
+
+
+        <div class="modal modal-4">
+            <img src="" alt="imagem do quadrinho" class="modal-img-4">
+
+
+            <div class="fecha-modal">
+                <span><i class="bi bi-x-circle fecha-4"></i></span>
+            </div>
+
+
+            <div class="conteudo-modal">
+
+                <h3  class="titulo-modal-4"></h3>
+    
+                <p class="desc desc-4"></p>
+            </div>
+        </div>
+
+
+        
 
 
         <main class="main box-quadrinhos centralizado">
@@ -136,11 +170,11 @@
                 <div class="card">
 
 
-                    <div class="imagem-quadrinho centralizado">
+                    <div class="imagem-quadrinho centralizado" id="image-container-1">
 
-                        <div class="info-hover centralizado">
-                            <h3>Danny Ketch: Ghost Rider (2023) #1</h3>
-                            <a class="btn" id="primeiro">Detalhes</a>
+                        <div class="info-hover centralizado fundo-1">
+                            <h3 class="titulo-1"></h3>
+                            <a class="btn abre-modal-1"  >Detalhes</a>
                         </div>
 
                     </div>
@@ -149,11 +183,11 @@
                 <div class="card">
 
 
-                    <div class="imagem-quadrinho centralizado">
+                    <div class="imagem-quadrinho centralizado" id="image-container-2">
 
-                        <div class="info-hover centralizado">
-                            <h3>Danny Ketch: Ghost Rider (2023) #1</h3>
-                            <a class="btn">Detalhes</a>
+                        <div class="info-hover centralizado fundo-2" >
+                            <h3 class="titulo-2"></h3>
+                            <a class="btn abre-modal-2">Detalhes</a>
                         </div>
 
                     </div>
@@ -162,11 +196,11 @@
                 <div class="card">
 
 
-                    <div class="imagem-quadrinho centralizado">
+                    <div class="imagem-quadrinho centralizado" id="image-container-3">
 
-                        <div class="info-hover centralizado">
-                            <h3>Danny Ketch: Ghost Rider (2023) #1</h3>
-                            <a class="btn">Detalhes</a>
+                        <div class="info-hover centralizado fundo-3" >
+                            <h3  class="titulo-3"></h3>
+                            <a class="btn abre-modal-3">Detalhes</a>
                         </div>
 
                     </div>
@@ -175,11 +209,11 @@
                 <div class="card">
 
 
-                    <div class="imagem-quadrinho centralizado">
+                    <div class="imagem-quadrinho centralizado" id="image-container-4">
 
-                        <div class="info-hover centralizado">
-                            <h3>Danny Ketch: Ghost Rider (2023) #1</h3>
-                            <a class="btn">Detalhes</a>
+                        <div class="info-hover centralizado fundo-4" >
+                            <h3  class="titulo-4"></h3>
+                            <a class="btn abre-modal-4">Detalhes</a>
                         </div>
 
                     </div>
@@ -195,14 +229,36 @@
         <main class="main box-personagens centralizado">
             <h2>Personagens</h2>
 
-            <img src="src/img/wolverine.png" alt="">
 
-            <a class="btn-hero" href="">PESQUISAR</a>
+            <img src="src/img/wolverine.png" alt="" id="img-personagem">
+
+            <div class="img-api-personagem">
+                <img src="" alt="">
+            </div>
+
+
+            <a class="btn-hero"  id="btnRandom">ALEATÓRIO</a>
         </main>
     </section>
 
 
     <section class="criadores-section" id="criadores-section-id">
+
+        <div class=" modal">
+          
+
+
+            <div class="fecha-modal">
+                <span><i class="bi bi-x-circle fecha-1"></i></span>
+            </div>
+
+
+            <div class="conteudo-modal">
+
+                
+
+            </div>
+        </div>
         <main class="main box-criadores centralizado">
 
             <h2>Criadores</h2>
@@ -272,8 +328,7 @@
 
 
 
-
-
+     
 
 
     <!-- Biblioteca SPARK MD5 -->
